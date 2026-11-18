@@ -66,14 +66,3 @@ See [case study](examples/azure-vm-quota-case-study.md) and [sanitized transcrip
 
 ## Reproducing the demonstration
 The original setup used a locally configured Squad integration with GitHub Copilot in VS Code. This packet is a **documentation portfolio**, not a turnkey redistribution of that framework. To reproduce, install an appropriately licensed Squad framework, configure your own agents and tools, and run the read-only scenario in your own authorized environment. No secrets or live credentials are provided.
-
-## Scope and attribution
-The Squad framework and generated scaffolding may be third-party materials. This repository documents **my configuration, test observations, and analysis**. The packet does not include original framework source or assert that I authored its runtime. Review the underlying framework's redistribution license before publishing agent charters or templates.
-
-## Next improvements
-- Add independently verified repeatable setup instructions after licensing review.
-- Capture a clean second demonstration with known test inputs and successful permission prompts.
-- Add validation tests for routing, review gates, and sanitized logging.
-- Create a small isolated example showing a full end-to-end engineering workflow.
-
-**Status:** Portfolio documentation assembled; public release pending final review.
