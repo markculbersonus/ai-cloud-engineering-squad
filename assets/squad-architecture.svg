@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900" role="img" aria-labelledby="title desc">
+<title id="title">AI Cloud Engineering Squad — architecture</title>
+<desc id="desc">A dark navy technical architecture diagram. A human engineer submits work to Konrad. Konrad delegates to Talos, Octavia, Variel, Cyrion, and Septimus. Sevatar reviews the result. Changes required return to Konrad; approved recommendations go to the human engineer, who must authorize production changes.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#07162B"/><stop offset="1" stop-color="#102D51"/></linearGradient>
+ <linearGradient id="card" x2="1" y2="1"><stop stop-color="#102C4E"/><stop offset="1" stop-color="#0B213D"/></linearGradient>
+ <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#5F9DD6"/></marker>
+ <marker id="back" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#A7BCE0"/></marker>
+ <style>
+  .title{font:700 30px system-ui,-apple-system,sans-serif;fill:#F5FAFF}
+  .subtitle{font:14px system-ui,-apple-system,sans-serif;fill:#A8C2E0}
+  .name{font:700 18px system-ui,-apple-system,sans-serif;fill:#F4F9FF}
+  .role{font:13px system-ui,-apple-system,sans-serif;fill:#B4CEE9}
+  .small{font:12px system-ui,-apple-system,sans-serif;fill:#A8C2E0}
+  .card{fill:url(#card);stroke:#2C5681;stroke-width:1.5}
+  .primary{fill:#153B67;stroke:#4D91CE;stroke-width:1.7}
+  .review{fill:#172E57;stroke:#6887D2;stroke-width:1.7}
+  .approval{fill:#133B53;stroke:#4A9CB2;stroke-width:1.7}
+  .line{fill:none;stroke:#5F9DD6;stroke-width:2;marker-end:url(#arr)}
+  .bus{fill:none;stroke:#4779A9;stroke-width:2}
+  .return{fill:none;stroke:#A7BCE0;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#back)}
+  .ico{fill:none;stroke:#86C2F5;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+ </style>
+ <symbol id="user" viewBox="0 0 32 32"><circle cx="16" cy="10" r="5"/><path d="M5 28v-4c0-8 22-8 22 0v4"/></symbol>
+ <symbol id="brain" viewBox="0 0 32 32"><rect x="5" y="7" width="22" height="18" rx="5"/><path d="M11 12h10M11 17h10M16 7V3M11 25v4M21 25v4"/></symbol>
+ <symbol id="cloud" viewBox="0 0 32 32"><path d="M9 25h15a6 6 0 0 0 0-12h-2A8 8 0 0 0 7 15a5 5 0 0 0 2 10Z"/></symbol>
+ <symbol id="network" viewBox="0 0 32 32"><rect x="2" y="3" width="10" height="9" rx="2"/><rect x="20" y="3" width="10" height="9" rx="2"/><rect x="11" y="21" width="10" height="9" rx="2"/><path d="M7 12v4h18v-4M16 16v5"/></symbol>
+ <symbol id="database" viewBox="0 0 32 32"><ellipse cx="16" cy="7" rx="11" ry="4"/><path d="M5 7v18c0 6 22 6 22 0V7M5 16c0 6 22 6 22 0"/></symbol>
+ <symbol id="pulse" viewBox="0 0 32 32"><path d="M2 17h7l4-9 6 17 4-8h7"/></symbol>
+ <symbol id="doc" viewBox="0 0 32 32"><path d="M8 3h12l6 6v20H8Z M20 3v7h6 M12 16h10M12 21h10"/></symbol>
+ <symbol id="shield" viewBox="0 0 32 32"><path d="M16 2 28 7v9c0 8-5 12-12 15C9 28 4 24 4 16V7Z M10 16l4 4 8-9"/></symbol>
+ <symbol id="lock" viewBox="0 0 32 32"><rect x="7" y="14" width="18" height="15" rx="3"/><path d="M11 14V9a5 5 0 0 1 10 0v5"/></symbol>
+</defs>
+<rect width="1280" height="900" fill="url(#bg)"/>
+<g opacity=".12" stroke="#6EA5D9" stroke-width=".7">
+ <path d="M0 100H1280M0 200H1280M0 300H1280M0 400H1280M0 500H1280M0 600H1280M0 700H1280M0 800H1280"/>
+ <path d="M100 0V900M200 0V900M300 0V900M400 0V900M500 0V900M600 0V900M700 0V900M800 0V900M900 0V900M1000 0V900M1100 0V900M1200 0V900"/>
+</g>
+<text x="56" y="57" class="title">AI CLOUD ENGINEERING SQUAD</text>
+<text x="56" y="85" class="subtitle">Seven specialized agents · task routing · independent review · human-in-the-loop governance</text>
+<rect x="1080" y="37" width="142" height="30" rx="15" fill="#153B67" stroke="#3F79B3"/>
+<text x="1151" y="57" text-anchor="middle" class="small">ARCHITECTURE</text>
+
+<!-- Human initiator -->
+<rect class="card" x="471" y="116" width="338" height="75" rx="14"/>
+<use href="#user" x="491" y="133" width="35" height="35" class="ico"/>
+<text class="name" x="546" y="147">Human engineer</text>
+<text class="role" x="546" y="169">Submits task · retains final authority</text>
+<path class="line" d="M640 191V227"/>
+
+<!-- Konrad -->
+<rect class="primary" x="450" y="227" width="380" height="82" rx="14"/>
+<use href="#brain" x="470" y="247" width="39" height="39" class="ico"/>
+<text class="name" x="525" y="260">Konrad</text>
+<text class="role" x="525" y="282">Lead orchestrator · triage and delegation</text>
+
+<!-- Specialist bus -->
+<path class="bus" d="M640 309V349M130 349H1150"/>
+<g class="line"><path d="M130 349V385"/><path d="M385 349V385"/><path d="M640 349V385"/><path d="M895 349V385"/><path d="M1150 349V385"/></g>
+<g>
+ <rect class="card" x="20" y="385" width="220" height="105" rx="13"/>
+ <use href="#cloud" x="35" y="402" width="33" height="33" class="ico"/>
+ <text class="name" x="80" y="423">Talos</text><text class="role" x="36" y="461">Azure SRE &amp; delivery</text>
+ <rect class="card" x="275" y="385" width="220" height="105" rx="13"/>
+ <use href="#network" x="290" y="402" width="33" height="33" class="ico"/>
+ <text class="name" x="335" y="423">Octavia</text><text class="role" x="291" y="461">Network engineering</text>
+ <rect class="card" x="530" y="385" width="220" height="105" rx="13"/>
+ <use href="#database" x="545" y="402" width="33" height="33" class="ico"/>
+ <text class="name" x="590" y="423">Variel</text><text class="role" x="546" y="461">Data engineering</text>
+ <rect class="card" x="785" y="385" width="220" height="105" rx="13"/>
+ <use href="#pulse" x="800" y="402" width="33" height="33" class="ico"/>
+ <text class="name" x="845" y="423">Cyrion</text><text class="role" x="801" y="461">Observability</text>
+ <rect class="card" x="1040" y="385" width="220" height="105" rx="13"/>
+ <use href="#doc" x="1055" y="402" width="33" height="33" class="ico"/>
+ <text class="name" x="1100" y="423">Septimus</text><text class="role" x="1056" y="461">Incident documentation</text>
+</g>
+<path class="bus" d="M130 490V524M385 490V524M640 490V524M895 490V524M1150 490V524M130 524H1150"/>
+<path class="line" d="M640 524V561"/>
+<rect class="review" x="445" y="561" width="390" height="83" rx="14"/>
+<use href="#shield" x="465" y="582" width="39" height="39" class="ico"/>
+<text class="name" x="521" y="593">Sevatar · Independent QA</text>
+<text class="role" x="521" y="616">Root-cause and remediation review</text>
+
+<!-- Revisions routed back -->
+<path class="return" d="M445 602H408V268H450"/>
+<rect x="245" y="561" width="154" height="29" rx="14" fill="#1B3658" stroke="#577BA4"/>
+<text class="small" x="322" y="580" text-anchor="middle">CHANGES REQUIRED</text>
+
+<!-- Approved output -->
+<path class="line" d="M640 644V692"/>
+<text x="657" y="670" class="small">Approved recommendation</text>
+<rect class="card" x="470" y="692" width="340" height="75" rx="14"/>
+<use href="#user" x="491" y="710" width="34" height="34" class="ico"/>
+<text class="name" x="544" y="721">Human engineer</text>
+<text class="role" x="544" y="744">Reviews recommendation and decides</text>
+<path class="line" d="M640 767V803"/>
+<rect class="approval" x="445" y="803" width="390" height="73" rx="14"/>
+<use href="#lock" x="466" y="822" width="34" height="34" class="ico"/>
+<text class="name" x="521" y="831">Potential production change</text>
+<text class="role" x="521" y="853">Explicit human approval required</text>
+</svg>
