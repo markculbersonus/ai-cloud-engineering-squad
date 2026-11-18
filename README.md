@@ -1,7 +1,7 @@
 # ⚔️ AI Cloud Engineering Squad
 ### Multi-Agent Orchestration | Microsoft Azure | Cloud Security | Human-in-the-Loop Review
 
-> **Portfolio project by Mark Culberson** — A configured seven-specialist AI Squad supporting Azure, Azure DevOps, and GitHub engineering workflows. This repository documents configuration and an observed read-only agent collaboration test; it is **not** evidence of autonomous production deployment or a custom-built agent runtime.
+> **Portfolio project by Mark Culberson** — A configured seven-specialist AI Squad supporting Azure, Azure DevOps, and GitHub engineering workflows. This repository documents configuration and an observed read-only agent collaboration test.
 
 ## Project overview
 I configured a domain-specialized Squad with task-routing instructions, a lead orchestrator, independent review, and explicit human approval gates. The aim is to apply AI-assisted engineering to incident triage, cloud infrastructure troubleshooting, and secure delivery while keeping the human operator accountable.
