@@ -34,7 +34,6 @@ Additional built-in support roles documented in the source setup: Scribe (decisi
 - Sevatar independently reviews proposed incident root causes and remediation.
 - Production-changing commands require the human lead's explicit approval.
 - Read-only investigation is the default; confirm the correct Azure tenant/subscription and repository context before commands.
-- The project documents GitHub Issue label conventions, but does **not** claim a production issue automation was executed.
 
 ## Observed demo: Azure VM regional vCPU quota
 
